@@ -31,7 +31,7 @@
             <h2>Lägg till arbetserfarenhet</h2>
 
             <!--Formulär-->
-            <form action="/" method="post">
+            <form action="/" method="post" id="workexperience-form">
                 <label for="companyname">Arbetsgivare:</label><br>
                 <input type="text" id="companyname" name="companyname"><br>
 
@@ -42,8 +42,10 @@
                 <input type="text" id="location" name="location"><br>
 
                 <input type="submit" value="Lägg till arbetserfarenhet">
-            </form>
 
+                <ul id="error-messages"></ul>
+            </form>
+        
 
         </main>
 
