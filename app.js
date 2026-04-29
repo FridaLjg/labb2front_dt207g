@@ -48,7 +48,31 @@ if (form) {
         const companyname = document.getElementById("companyname").value;
         const jobtitle = document.getElementById("jobtitle").value;
         const location = document.getElementById("location").value;
+        const errorList = document.getElementById("error-messages");
+        errorList.innerHTML = "";
+
         
+if (!companyname) {
+            const li = document.createElement("li");
+            li.textContent = "Arbetsgivare måste fyllas i!";
+            errorList.appendChild(li);
+            hasErrors = true;
+        }
+
+        if (!jobtitle) {
+            const li = document.createElement("li");
+            li.textContent = "Arbetsroll måste fyllas i!";
+            errorList.appendChild(li);
+            hasErrors = true;
+        }
+
+        if (!location) {
+            const li = document.createElement("li");
+            li.textContent = "Plats måste fyllas i!";
+            errorList.appendChild(li);
+            hasErrors = true;
+        }
+
         const newWorkExperience = {
             companyname,
             jobtitle,

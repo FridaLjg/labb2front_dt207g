@@ -65,6 +65,11 @@ form {
     margin-bottom: 1.5rem;
 }
 
+#error-messages {
+    color: red;
+    font-weight: 600;
+}
+
 footer {
     background-color: rgb(89, 108, 214);
     width: 100%;
