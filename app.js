@@ -39,5 +39,15 @@ function getWorkExperience() {
 getWorkExperience();
 
 
+const form = document.getElementById("workexperience-form");
+
+form.addEventListener("submit", function (e) {
+    
+    const companyname = document.getElementById("companyname").value;
+    const jobtitle = document.getElementById("jobtitle").value;
+    const location = document.getElementById("location").value;
+
+});
+
 
 
