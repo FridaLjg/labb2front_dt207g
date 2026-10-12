@@ -10,7 +10,7 @@ function getWorkExperience() {
             list.innerHTML = "";
 
             if (data.length === 0) {
-                list.innerHTML = "<li>Inget hittades hittades.</li>";
+                list.innerHTML = "<li>Inget hittades.</li>";
                 return;
             }
 
