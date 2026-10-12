@@ -29,7 +29,27 @@
     <div class="container">
         <main>
             <h2>Om</h2>
+            <p>
+                Syftet med denna webbplats är att presentera och hantera arbetserfarenheter via en egenutvecklad webbtjänst.
+                Man kan på startsidan se sina regristrerade arbetserfarenheter. På undersidan "Lägg till arbetserfarenhet" 
+                kan man lägga till nya arbetserfarenheter genom ett formulär.
+                Kommunikation mellan webbplatsen och webbtjänsten sker med hjälp av Fetch API och data skickas och hämtas i JSON-format.
+            </p>
 
+            <h3>Databasserver</h3>
+            <p>
+                I denna laboration används databasservern MySQL för lagring av data. 
+                Databasen innehåller tabellen workexperience där information om arbetserfarenheter lagras.
+            </p>
+
+            <h3>Slutsatser</h3>
+            <p>
+                I denna laboration har jag lärt mig att skapa en REST-baserad webbtjänst som har stöd för CRUD
+                och att ansluta tjänsten till en databas. 
+                Under arbetets gång lärde jag mig hut viktig CORS är vid utveckling av webbtjänster.
+                Till en början hade jag inte med kodsnutten "app.use(cors());", vilket jag nu har lärt mig behövs för att
+                få webbplatsen och API:et att kommunicera med varandra.
+            </p>
         </main>
 
     </div>
